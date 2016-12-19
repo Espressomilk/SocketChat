@@ -17,7 +17,7 @@ app.use(session(app));
 app.on('error', function(err){
     logger.error(err, err.ctx);
 });
-app.use(router(app));
+// app.use(router(app));
 app.use(serve(getAbsolutePath('public')));
 app.use(serve(getAbsolutePath('bower_components'), {
     maxAge: 1000 * 86400 * 30

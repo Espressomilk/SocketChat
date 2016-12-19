@@ -3,6 +3,8 @@ var path = require('path');
 
 var cfgFileName = 'config.cfg';
 var cache = {};
+// console.log("DEBUG: ");
+// console.log(process.env.chat_home);
 var filePath = path.join(process.env.chat_home, cfgFileName);
 
 function getConfigs() {
